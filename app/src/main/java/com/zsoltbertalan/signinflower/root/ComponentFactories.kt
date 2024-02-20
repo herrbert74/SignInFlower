@@ -1,6 +1,6 @@
 package com.zsoltbertalan.signinflower.root
 
-import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.domain.api.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.ui.onboarding.confirmpin.ConfirmPinComponent
 import com.zsoltbertalan.signinflower.ui.onboarding.credentials.CredentialsComponent
 import com.zsoltbertalan.signinflower.ui.onboarding.newpin.NewPinComponent

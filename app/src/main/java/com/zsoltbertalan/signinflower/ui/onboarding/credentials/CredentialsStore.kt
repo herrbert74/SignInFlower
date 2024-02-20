@@ -6,7 +6,7 @@ import com.arkivanov.essenty.statekeeper.consume
 import com.arkivanov.mvikotlin.core.store.Store
 import com.arkivanov.mvikotlin.core.store.StoreFactory
 import com.arkivanov.mvikotlin.extensions.coroutines.coroutineExecutorFactory
-import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.domain.api.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.di.IoDispatcher
 import com.zsoltbertalan.signinflower.di.MainDispatcher
 import kotlinx.coroutines.CoroutineDispatcher

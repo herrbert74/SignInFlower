@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.arkivanov.decompose.DefaultComponentContext
-import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.domain.api.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.di.IoDispatcher
 import com.zsoltbertalan.signinflower.di.MainDispatcher
 import com.zsoltbertalan.signinflower.root.SignInFlowerRootComponent

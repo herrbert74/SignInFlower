@@ -5,7 +5,7 @@ Test Challenge creating a sign in flow
 
 ## Tech
 
-* I used commonly used libraries Retrofit 2, Coroutines, Dagger 2, AndroidX, Coil, Realm, MockWebServer and Compose.
+* I used commonly used libraries Coroutines, Dagger 2, AndroidX, and Compose.
 * I also used less commonly used libraries, like MVIKotlin, Decompose and Essenty. See details in the structure section.
 * I used my base library. This contains code that I could not find in other third party libraries, and what I use in 
   different projects regularly:
@@ -16,8 +16,8 @@ Test Challenge creating a sign in flow
 * I use a monorepo for such a tiny project, however I used a few techniques to show how I can build an app that 
   scales, even if they are an overkill as they are now.
 * The three main sections (module groups in a larger project) are **data**, **domain**, and **ui**.
-* **Domain** does not depend on anything and contains the api interfaces, and the model classes. **Unused in this 
-  project**.
+* **Domain** does not depend on anything and contains the api interfaces, and the model classes. **Model is unused in 
+  this project**.
 * **Data** implements the domain interfaces (repos) through the network, local and db packages or modules, and does not 
   depend on anything else, apart from platform and third party libraries. Here only the local package is used, 
   because I only needed SharedPreferences.

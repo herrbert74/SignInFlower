@@ -1,4 +1,4 @@
-package com.zsoltbertalan.signinflower.data
+package com.zsoltbertalan.signinflower.domain.api
 
 interface SignInFlowerRepository {
 

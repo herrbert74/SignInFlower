@@ -2,7 +2,7 @@ package com.zsoltbertalan.signinflower.di
 
 import android.content.Context
 import com.zsoltbertalan.signinflower.data.SignInFlowerAccessor
-import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.domain.api.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.data.local.Prefs
 import com.zsoltbertalan.signinflower.data.local.PrefsAccessor
 import com.zsoltbertalan.signinflower.data.local.SIGN_IN_FLOWER_PREFS
