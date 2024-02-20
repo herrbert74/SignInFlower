@@ -1,15 +1,7 @@
 package com.zsoltbertalan.signinflower.ui
 
+import com.zsoltbertalan.signinflower.data.SignInFlowerAccessor
 import com.zsoltbertalan.signinflower.data.local.Prefs
-import com.zsoltbertalan.signinflower.data.network.SignInFlowerAccessor
-import com.zsoltbertalan.signinflower.data.network.SignInFlowerService
-import com.zsoltbertalan.signinflower.data.network.dto.StartDto
-
-val defaultSignInFlowerService = object : SignInFlowerService {
-	override suspend fun getStart(): List<StartDto> {
-		TODO("Not yet implemented")
-	}
-}
 
 val defaultPrefs = object : Prefs {
 	override fun saveUserFirstName(firstName: String) {

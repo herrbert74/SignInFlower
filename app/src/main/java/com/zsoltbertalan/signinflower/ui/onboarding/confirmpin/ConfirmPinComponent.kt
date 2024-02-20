@@ -4,7 +4,7 @@ import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.value.Value
 import com.arkivanov.mvikotlin.logging.store.LoggingStoreFactory
 import com.arkivanov.mvikotlin.main.store.DefaultStoreFactory
-import com.zsoltbertalan.signinflower.data.network.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.di.IoDispatcher
 import com.zsoltbertalan.signinflower.di.MainDispatcher
 import com.zsoltbertalan.signinflower.ext.asValue

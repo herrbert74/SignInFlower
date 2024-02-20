@@ -1,5 +1,6 @@
-package com.zsoltbertalan.signinflower.data.network
+package com.zsoltbertalan.signinflower.data
 
+import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.data.local.Prefs
 import javax.inject.Singleton
 

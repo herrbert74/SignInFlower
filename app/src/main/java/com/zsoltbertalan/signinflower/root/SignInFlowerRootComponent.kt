@@ -5,7 +5,7 @@ import com.arkivanov.decompose.childContext
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.router.stack.childStack
 import com.arkivanov.decompose.value.Value
-import com.zsoltbertalan.signinflower.data.network.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.di.IoDispatcher
 import com.zsoltbertalan.signinflower.di.MainDispatcher
 import com.zsoltbertalan.signinflower.ui.onboarding.confirmpin.ConfirmPinComp

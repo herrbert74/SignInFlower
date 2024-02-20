@@ -4,7 +4,7 @@ import com.arkivanov.mvikotlin.core.store.Store
 import com.arkivanov.mvikotlin.extensions.coroutines.states
 import com.arkivanov.mvikotlin.main.store.DefaultStoreFactory
 import com.babestudios.base.kotlin.ext.test
-import com.zsoltbertalan.signinflower.data.network.SignInFlowerRepository
+import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
 import io.kotest.matchers.shouldBe
 import io.mockk.coEvery
 import io.mockk.coVerify

@@ -1,7 +1,8 @@
 package com.zsoltbertalan.signinflower.di
 
 import android.content.Context
-import android.net.ConnectivityManager
+import com.zsoltbertalan.signinflower.data.SignInFlowerAccessor
+import com.zsoltbertalan.signinflower.data.SignInFlowerRepository
 import com.zsoltbertalan.signinflower.data.local.Prefs
 import com.zsoltbertalan.signinflower.data.local.PrefsAccessor
 import com.zsoltbertalan.signinflower.data.local.SIGN_IN_FLOWER_PREFS
@@ -20,14 +21,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class SingletonModule {
 
-	@Provides
-	@Singleton
-	internal fun provideConnectivityManager(
-		@ApplicationContext context: Context
-	): ConnectivityManager {
-		return context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-	}
-
 	@DefaultDispatcher
 	@Provides
 	fun providesDefaultDispatcher(): CoroutineDispatcher = Dispatchers.Default
@@ -43,6 +36,10 @@ class SingletonModule {
 	@Provides
 	fun providePrefs(@ApplicationContext context: Context): Prefs =
 		PrefsAccessor(context.getSharedPreferences(SIGN_IN_FLOWER_PREFS, Context.MODE_PRIVATE))
+
+	@Provides
+	@Singleton
+	fun provideSignInFlowerRepository(prefs: Prefs): SignInFlowerRepository = SignInFlowerAccessor(prefs)
 
 }
 
